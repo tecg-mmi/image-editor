@@ -14,10 +14,10 @@ Cet exercice vous donne l’occasion de manipuler les images avec canvas. Vous p
 
 ## Énoncé
 
-1. Commencez par rendre visible le canvas en le dessinant en blanc.
+1. Commencez par rendre visible le canvas en le dessinant, en blanc.
     ![readme1](img/readme1.jpg)
 
-1. Permettez à l'utilisateur de choisir une image. Quand l'image choisie par l'utilisateur est complètement chargée, en mémoire, dessinez l'image dans le canvas. Ce dernier prend la taille de l'image.
+1. Permettez à l'utilisateur de choisir une image. Quand [l'image](https://developer.mozilla.org/fr/docs/Web/API/HTMLImageElement/Image) choisie par l'utilisateur est complètement [chargée](https://developer.mozilla.org/fr/docs/Web/API/FileReader), en mémoire, dessinez l'image dans le canvas. Ce dernier prend la taille de l'image.
     ![readme2](img/readme2.gif)
 
 1. On peut charger une image à partir du bouton de chargement ou bien en cliquant dans le canvas qui est alors encore vide. Bien entendu, une fois qu'on a choisi une image et qu'on clique une deuxième fois dans le canvas, on n'est plus invité à choisir une image. Le clic n'a alors plus d'effet.
