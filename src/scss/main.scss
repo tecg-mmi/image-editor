@@ -1,4 +1,31 @@
-* * {
-  margin: 0;
-  padding: 0;
+@import "node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+$body-bg: #000;
+$body-color: #111;
+$dark: #424242;
+$ps-bg: #282728;
+
+// Required
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+.bg-photoshop {
+  background: $ps-bg;
+}
+label {
+  color: white;
 }
