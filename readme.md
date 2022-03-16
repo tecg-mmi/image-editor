@@ -14,7 +14,7 @@ Cet exercice vous donne l’occasion de manipuler les images avec canvas. Vous p
 
 ## Énoncé
 
-1. Commencez par rendre visible le canvas en dessinant, en blanc, le canvas.
+1. Commencez par rendre visible le canvas en le dessinant en blanc.
     ![readme1](img/readme1.jpg)
 
 1. Permettez à l'utilisateur de choisir une image. Quand l'image choisie par l'utilisateur est complètement chargée, en mémoire, dessinez l'image dans le canvas. Ce dernier prend la taille de l'image.
