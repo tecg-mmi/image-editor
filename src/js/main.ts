@@ -59,9 +59,11 @@ class Main {
             this.draw();
         });
         this.filters.forEach((filter) => {
-            document.getElementById(filter.name).addEventListener('change', (event) => {
+            document.getElementById(filter.name).addEventListener('input', (event) => {
                 // @ts-ignore
                 filter.value = parseFloat(event.currentTarget.value);
+                // @ts-ignore
+                this.updateLabel(document.querySelector(`label[for="${event.currentTarget.id}"]`), event.currentTarget);
                 this.draw();
             });
         });
@@ -70,6 +72,7 @@ class Main {
     loadFilters() {
         document.querySelectorAll('input[type="range"]').forEach((input: HTMLInputElement) => {
             const label: HTMLLabelElement = document.querySelector(`label[for="${input.id}"]`);
+            this.updateLabel(label, input);
             this.filters.push(
                 {
                     name: input.id, value: parseFloat(input.value),
@@ -77,8 +80,12 @@ class Main {
                     HtmlInput: input,
                     HtmlLabel: label
                 });
-            label.textContent = `${label.dataset.text} : ${input.value}${input.dataset.unit}`
+
         });
+    }
+
+    updateLabel(label: HTMLLabelElement, input: HTMLInputElement) {
+        label.textContent = `${label.dataset.text} : ${input.value}${input.dataset.unit}`
     }
 
     drawBackground() {
