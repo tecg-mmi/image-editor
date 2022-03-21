@@ -11292,3 +11292,7 @@ textarea.form-control-lg {
 label {
   color: white;
 }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffc107;
+}
