@@ -29,3 +29,7 @@ $theme-colors: (
 label {
   color: white;
 }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $warning;
+}
