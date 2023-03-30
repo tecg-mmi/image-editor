@@ -20,7 +20,6 @@ class Main {
         this.imageUploaded = false;
         this.filters = [];
         this.loadFilters();
-        console.log(this.filters);
         this.draw();
         this.addEventListeners();
     }
