@@ -26,10 +26,15 @@ $theme-colors: (
 .bg-photoshop {
   background: $ps-bg;
 }
+
 label {
   color: white;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: $warning;
+}
+
+#my-canvas {
+  background: white;
 }
