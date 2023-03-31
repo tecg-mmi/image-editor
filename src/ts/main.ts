@@ -27,8 +27,14 @@ function main() {
         image.src = reader.result as string;
     });
     image.addEventListener('load', () => {
-        canvas.height = image.height;
-        canvas.width = image.width;
+        if (image.width > settings.canvas.maxWidth || image.height > settings.canvas.maxHeight) {
+            alert(`L'image est trop grande max(l${settings.canvas.maxWidth},h${settings.canvas.maxHeight})`);
+        } else {
+            canvas.height = image.height;
+            canvas.width = image.width;
+
+        }
+        canvas.ctx.drawImage(image, 0, 0);
     });
 
 }
